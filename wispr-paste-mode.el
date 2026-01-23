@@ -29,6 +29,7 @@ This is intended to catch Wispr Flow's M-v paste behavior."
       (insert clip)
       (kill-new clip))))
 
+;;;###autoload
 (define-minor-mode wispr-paste-mode
   "Minor mode to make `M-v` paste from system clipboard for Wispr Flow.
 
