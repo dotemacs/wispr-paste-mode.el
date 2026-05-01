@@ -22,8 +22,10 @@
 
 (defun wispr-paste-yank-from-clipboard ()
   "Insert system clipboard contents at point.
-This is intended to catch Wispr Flow's M-v paste behavior."
+   This is intended to catch Wispr Flow's M-v paste behavior."
   (interactive)
+  (when (called-interactively-p 'interactive)
+    (message "M-v is remapped by wispr-paste-mode; disable it to use the original M-v binding"))
   (let ((clip (gui-selection-value)))
     (when (and clip (stringp clip))
       (insert clip)
