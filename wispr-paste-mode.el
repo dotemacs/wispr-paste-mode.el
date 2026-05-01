@@ -1,6 +1,6 @@
 ;;; wispr-paste-mode.el --- Support for Wispr Flow dictation -*- lexical-binding: t; -*-
 
-;; Version: 0.1
+;; Version: 0.2
 ;; Package-Requires: ((emacs "25.1"))
 ;; Author: Александар Симић <a@repl.ist>
 ;; URL: https://github.com/dotemacs/wispr-paste-mode.el
